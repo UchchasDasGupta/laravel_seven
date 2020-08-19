@@ -21,6 +21,7 @@ class PostController extends Controller
         ]);
 
         $data=array();
+        //query builder
        //$data['database table er nam']=$request->form er field er nam;
         $data['name']=$request->name;
         $data['slug']=$request->slug;

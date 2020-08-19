@@ -33,5 +33,17 @@ Route::post('update/post/{id}','imageController@UpdatePost');
 Route::get('delete/post/{id}','imageController@DeletePost');
 
 
+//student=============
+
+Route::get('students','studentController@create')->name('student');
+Route::post('store/student','studentController@store')->name('store.student');
+Route::get('all/students','studentController@index')->name('all.student');
+Route::get('view/student/{id}','studentController@show');
+Route::get('delete/student/{id}','studentController@destroy');
+Route::get('edit/student/{id}','studentController@edit');
+Route::post('update/student/{id}','studentController@update');
+
+
+
 
 
